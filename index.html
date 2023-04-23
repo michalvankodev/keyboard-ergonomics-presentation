@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/black.css" />
+    <link rel="stylesheet" href="dist/theme/white-contrast.css" />
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
@@ -25,6 +25,23 @@
 
       .intro-footer {
         display: flex;
+      }
+
+      .keycap {
+        border: 2px solid #eee;
+        border-radius: 5px;
+        padding: 5px 15px;
+        font-family: var(--r-code-font);
+      }
+
+      .keycap.active {
+        background-color: #88a;
+      }
+
+      .key-output {
+        margin-top: 2em;
+        font-size: 1.2em;
+        font-family: var(--r-code-font);
       }
     </style>
   </head>
@@ -86,11 +103,13 @@
             </aside>
           </section>
           <section>
-            <em
-              >Prvý úspešný písací stroj bol vyrobený v amerike v roku 1873,
-              Sholes a Glidden vlastnili patent a mal aplikované QWERTY
-              rozloženie</em
-            >
+            <p>
+              <em
+                >Prvý úspešný písací stroj bol vyrobený v amerike v roku 1873,
+                Sholes a Glidden vlastnili patent a mal aplikované QWERTY
+                rozloženie</em
+              >
+            </p>
             <img
               alt="Sholes typewriter"
               src="/assets/Sholes_typewriter.jpg"
@@ -106,14 +125,131 @@
 
           <section>
             <h3>QWERTY</h3>
+            <img src="/assets/qwerty.svg" alt="QWERTY layout" />
+            <ul>
+              <li>Prvý výskyt v roku 1870</li>
+              <li>
+                Postupne vyvinutý pre-usporiadaním znakov z pôvodných písacích
+                strojov
+              </li>
+              <li>Najpopulárnejšie a najpoužívanejšie do dnes</li>
+            </ul>
+
+            <aside class="notes">
+              <ul>
+                <li>
+                  Prvé stroje mali iba dva riadky a znaky boli zoradené podľa
+                  abecedy.
+                </li>
+                <li>
+                  Dodnes nebol dokazany ze by sa na tento layout prislo nejakym
+                  vyskumom.
+                </li>
+                <li>
+                  Vzniklo viacero upravenych alternativ pre podporu jazykov,
+                  QWERTZ, AZERTY
+                </li>
+              </ul>
+            </aside>
+          </section>
+
+          <section data-transition="slide-in fade-out" data-auto-animate>
+            <h4>Minihra</h4>
+
+            <div class="keys" data-id="keys">
+              <span class="keycap">Q</span>
+              <span class="keycap">W</span>
+              <span class="keycap">E</span>
+              <span class="keycap">R</span>
+              <span class="keycap">T</span>
+              <span class="keycap">Y</span>
+              <span class="keycap">U</span>
+              <span class="keycap">I</span>
+              <span class="keycap">O</span>
+              <span class="keycap">P</span>
+            </div>
+
+            <div class="key-output">
+              <span class="key-result">_</span>
+              <span class="key-result">_</span>
+              <span class="key-result">_</span>
+              <span class="key-result">_</span>
+              <span class="key-result">_</span>
+              <span class="key-result">_</span>
+              <span class="key-result">_</span>
+              <span class="key-result">_</span>
+              <span class="key-result">_</span>
+              <span class="key-result">_</span>
+            </div>
+
+            <aside class="notes">
+              <ul>
+                <li>
+                  Ake slovo sa da vyskladat pomocou len horneho radu QWERTY?
+                </li>
+              </ul>
+            </aside>
+          </section>
+          <section
+            data-transition="fade-in slide-out"
+            data-auto-animate=""
+            data-transition-speed="slow"
+          >
+            <h4>Náhoda?</h4>
+
+            <img src="assets/philoshator.jpg" height="100px" />
+
+            <div class="keys" data-id="keys">
+              <span class="keycap">Q</span>
+              <span class="keycap active">W</span>
+              <span class="keycap active">E</span>
+              <span class="keycap active">R</span>
+              <span class="keycap active">T</span>
+              <span class="keycap active">Y</span>
+              <span class="keycap">U</span>
+              <span class="keycap active">I</span>
+              <span class="keycap">O</span>
+              <span class="keycap active">P</span>
+            </div>
+
+            <div class="key-output">
+              <span class="key-result">T</span>
+              <span class="key-result">Y</span>
+              <span class="key-result">P</span>
+              <span class="key-result">E</span>
+              <span class="key-result">W</span>
+              <span class="key-result">R</span>
+              <span class="key-result">I</span>
+              <span class="key-result">T</span>
+              <span class="key-result">E</span>
+              <span class="key-result">R</span>
+            </div>
           </section>
 
           <section>
-            vertical?
+            <h2>Dvorak</h2>
+
+            <img src="/assets/dvorak.png" alt="Dvorak layout" />
+
+            <ul>
+              <li>Patentovaný v roku 1936</li>
+              <li>
+                Ciele:
+                <ul>
+                  <li>obmedziť výskyt chyb pri písaní</li>
+                  <li>zrýchliť písanie</li>
+                  <li>znížiť únavu</li>
+                  <li>mierený na anglický jazyk</li>
+                </ul>
+              </li>
+            </ul>
 
             <aside class="notes">
-              TODO ako vzniklo qwerty? zdroje wikipedia a research paper o tom
-              ako boli prve rozlozenia 2 riadkove az qwe.y do qwerty
+              <ul>
+                <li>August Dvorak and his brother-in-law, William Dealey</li>
+                <li>Hlboky vyskum stavby slov.</li>
+                <li>Pri pisani by sa mali striedat ruky</li>
+              </ul>
             </aside>
           </section>
         </section>
