@@ -1,40 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css" />
+	<link rel="stylesheet" href="dist/reveal.css" />
+	<link rel="stylesheet" href="dist/theme/black.css" />
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" />
+	<style>
+		.profile-pic {
+			width: 300px;
+			height: 300px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+
+		.intro-footer {
+			display: flex;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Klávesnice a ergonómia 21. storočia</h1>
+				Podnadpis
+
+				<footer class="intro-footer">
+					<img src="assets/profile-portugal-landscape.jpg" alt="Profilova fotecka" width="300" class="profile-pic" />
+					<div>
+						<h2>Michal Vanko</h2>
+						<div>
+							<em>Architekt riešení a manažér inžinierstva</em>
+						</div>
+						<div>
+							<em class="mini-position">Streamer a devfluencer</em>
+						</div>
+					</div>
+				</footer>
+			</section>
+			<section id="history">
+				<section>
+					<h2>Počiatok klávesníc</h2>
+
+					<img alt="Dino meme" src="/assets/dinomeme1.png" />
+					<p>
+						V roku 1870 <a href="https://en.wikipedia.org/wiki/Rasmus_Malling-Hansen" target="_blank">Rasmus
+							Malling-Hansen</a> vynašiel prvý komerčne predávaný písací stroj.
+					</p>
+					<aside class="notes">
+						<ul>
+							<li>Stroj obsahoval Solenoid (elektromagnet), co ho robi prvym elektrickym pisacim strojom.
+							</li>
+							<li>V roku 1575 vynasiel taliansky tlaciar Francesco Rampazetto prvy stroj ktory, tlacil pismena na
+								papier.
+							</li>
+							<li>1802 talian Agostino Fantony vynasiel pisaci stroj pre svoju slepu sestru
+							</li>
+						</ul>
+					</aside>
+				</section>
+				<section <em>Prvý úspešný písací stroj bol vyrobený v amerike v roku 1873, Sholes a Glidden vlastnili patent a
+					mal aplikované QWERTY rozloženie</em>
+					<img alt="Sholes typewriter" src="/assets/Sholes_typewriter.jpg" height="500px" />
+
+				</section>
+			</section>
+
+			<section id="layouts">
+				<section>
+					<h1>Rozloženie kláves</h1>
+				</section>
+
+				<section> vertical?
+
+					<aside class="notes">
+						TODO ako vzniklo qwerty? zdroje wikipedia a research paper o tom ako boli prve rozlozenia
+						2 riadkove az qwe.y do qwerty
+					</aside>
+				</section>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+		});
+	</script>
+</body>
+
 </html>
