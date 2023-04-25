@@ -14,12 +14,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 :root {
   --r-background-color: #f7f3de;
-  --r-main-font: Lato, sans-serif;
+  --r-main-font: Raleway, Lato, sans-serif;
   --r-main-font-size: 40px;
   --r-main-color: #333;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: League Gothic, Impact, sans-serif;
+  --r-heading-font: Raleway, League Gothic, Impact, sans-serif;
   --r-heading-color: #333;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
@@ -137,8 +137,8 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal img,
 .reveal video,
 .reveal iframe {
-  max-width: 95%;
-  max-height: 95%;
+  max-width: 75%;
+  max-height: 75%;
 }
 
 .reveal strong,
