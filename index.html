@@ -9,9 +9,12 @@
 
     <title>reveal.js</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
     <link rel="stylesheet" href="dist/theme/white-contrast.css" />
@@ -30,10 +33,16 @@
         margin-top: 4em;
         display: flex;
         justify-content: center;
+        align-items: center;
+        gap: 3em;
       }
 
       .mini-position {
         font-size: 0.8em;
+      }
+
+      .position {
+        font-size: 0.9em;
       }
 
       .intro-footer > div {
@@ -57,6 +66,18 @@
         font-family: var(--r-code-font);
       }
 
+      .contact {
+        display: grid;
+        grid-column-gap: 1em;
+        grid-template-columns: 100px 1fr;
+        width: min-content;
+        margin: auto;
+        align-items: center;
+      }
+
+      .contact > aside img {
+        height: 50px;
+      }
     </style>
   </head>
 
@@ -65,7 +86,12 @@
       <div class="slides">
         <section>
           <h1>Klávesnice a ergonómia 21. storočia</h1>
-          <p><br> <br> <br>Možnosti ako si prispôbiť klávesnicu pre komfort nie len pri práci</p>
+          <p>
+            <br />
+            <br />
+            <br />Možnosti ako si prispôbiť klávesnicu pre komfort nie len pri
+            práci
+          </p>
 
           <footer class="intro-footer">
             <img
@@ -77,7 +103,9 @@
             <div>
               <h2>Michal Vanko</h2>
               <div>
-                <em>Architekt riešení a manažér inžinierstva</em>
+                <em class="position"
+                  >Architekt riešení a manažér inžinierstva</em
+                >
               </div>
               <div>
                 <em class="mini-position">Streamer a devfluencer</em>
@@ -134,7 +162,45 @@
 
         <section>
           <section>
+            <h2>Ako sedieť za počítačom</h2>
+            <img src="./assets/office.webp" alt="ako spravne sediet" />
+          </section>
+
+          <section>
+            <h2>Problémy "moderných" klávesnic</h2>
+
+            <div class="r-stack">
+              <img
+                class="fragment"
+                src="./assets/keyboard_layouts.gif"
+                alt="keyboardlayoutt"
+              />
+              <img
+                class="fragment"
+                src="./assets/keyboard_layoutswhands.gif"
+                alt="keyboardlayoutt"
+              />
+              <img
+                class="fragment"
+                src="./assets/keyboard_layoutswhands2.gif"
+                alt="keyboardlayoutt"
+              />
+            </div>
+          </section>
+          <aside class="notes">
+            <ul>
+              <li>Ako keby sme boli cely den na manikure</li>
+              <li>Ako keby vsetky prsty su rovnako dlhe</li>
+              <li>Keby nam isly ruky z brucha</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section>
+          <section>
             <h2>Rôzne spôsoby ako vylepšiť ergonómiu klávesnice</h2>
+            <img src="./assets/teta.png" alt="teta" />
+            <p>1972</p>
           </section>
 
           <section>
@@ -156,7 +222,7 @@
           </section>
 
           <section>
-            <h3>Doplnky</h3>
+            <h3>Programovatelnosť a doplnky</h3>
             <img src="./assets/1k.jpg" alt="dilemma" />
           </section>
         </section>
@@ -436,15 +502,201 @@
         </section>
         <section>
           <section>
-            <h2>Programovanie klávesnice</h2>
-            Difficulty of creating custom keyboard
-            TODO 
-            Multiple layouts
-            TYPY Kombinacii a specialnych skratiek
-            MIRIOKU
+            <h2>Moja prvá vlastnoručne vyrobená klávesnica</h2>
+
+            <div class="r-stack">
+              <img
+                class="fragment fade-out"
+                data-fragment-index="0"
+                src="./assets/2020-03-23_20-24-18-981.jpg"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                data-fragment-index="0"
+                src="./assets/2020-03-23_20-24-13_625.jpg"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                src="./assets/2020-03-23_20-24-08_235.jpg"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                src="./assets/2020-03-23_20-24-06_393.jpg"
+              />
+            </div>
+            <div>
+              <h4>Redox</h4>
+              <a
+                href="https://michalvanko.dev/blog/2020-04-10-custom-redox-keyboard-assembly"
+                target="_blank"
+                >Návod a nákupný košík</a
+              >
+            </div>
+          </section>
+          <section>
+            <h2>Moja ostatná vlastnoručne vyrobená klávesnica</h2>
+
+            <div class="r-stack">
+              <img
+                class="fragment fade-out"
+                data-fragment-index="0"
+                src="./assets/20230417_103303.jpg"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                src="./assets/20230225_173854.jpg"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                data-fragment-index="0"
+                src="./assets/20230223_083626.jpg"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                src="./assets/20230226_130037.jpg"
+              />
+            </div>
+            <div>
+              <h4>Skeletyl</h4>
+            </div>
           </section>
         </section>
+        <section>
+          <section>
+            <h2>Programovanie klávesnice</h2>
 
+            <ul>
+              <li>
+                Dva populárne projekty:
+                <ul>
+                  <li>Quantum Mechanical Keyboard (QMK) Firmware</li>
+                  <li>Zephyr™ Mechanical Keyboard (ZMK) Firmware</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <iframe
+              data-src="https://zmk.dev/docs#features"
+              width="95%"
+              height="1000"
+            ></iframe>
+          </section>
+          <section>
+            <h3>Configurátor</h3>
+            <iframe
+              data-src="https://config.qmk.fm/#/ergodox_ez/base/LAYOUT_ergodox_pretty"
+              width="95%"
+              height="1000"
+            ></iframe>
+            <aside class="notes">
+              <ul>
+                <li>Layouty</li>
+                <li>Klavesy</li>
+                <li>Quantum funkcie</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h3>Miryoku</h3>
+            <div class="r-stack">
+              <img
+                class="fragment fade-out"
+                data-fragment-index="0"
+                src="./assets/miryoku-kle-reference.png"
+                height="600"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                data-fragment-index="0"
+                src="./assets/miryoku-kle-base.png"
+                height="600"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                src="./assets/miryoku-kle-nav.png"
+                height="600"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                src="./assets/miryoku-kle-mouse.png"
+                height="600"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                src="./assets/miryoku-kle-media.png"
+                height="600"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                src="./assets/miryoku-kle-num.png"
+                height="600"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                src="./assets/miryoku-kle-sym.png"
+                height="600"
+              />
+              <img
+                class="fragment fade-in-then-out"
+                src="./assets/miryoku-kle-fun.png"
+                height="600"
+              />
+            </div>
+            <div>
+              <a
+                href="https://github.com/manna-harbour/miryoku/tree/master/docs/reference"
+                target="_blank"
+                >Dokumentácia</a
+              >
+            </div>
+          </section>
+        </section>
+        <section>
+          <h2>Ďakujem za pozornosť</h2>
+
+          <div
+            class="fragment"
+            data-transition-speed="slow"
+            style="margin-top: 2em"
+          >
+            <h3>Blog</h3>
+            <div>
+              <a href="https://michalvanko.dev" target="_blank"
+                >https://michalvanko.dev</a
+              >
+            </div>
+            <h4 style="margin-top: 2em">Kontakt</h4>
+            <div class="contact">
+              <aside><img src="./assets/twitch.png" /></aside>
+              <div>
+                <a href="https://twitch.tv/michalvankodev" target="_blank"
+                  >twitch.tv/michalvankodev</a
+                >
+              </div>
+              <aside><img src="./assets/twitter.png" /></aside>
+              <div>
+                <a href="https://twitter.com/michalvankodev" target="_blank"
+                  >@michalvankodev</a
+                >
+              </div>
+              <aside><img src="./assets/github.png" /></aside>
+              <div>
+                <a href="https://github.com/michalvankodev" target="_blank"
+                  >@michalvankodev</a
+                >
+              </div>
+              <aside><img src="./assets/linkedin.png" /></aside>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/michal-vanko-dev/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
